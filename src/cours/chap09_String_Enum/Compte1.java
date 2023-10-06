@@ -2,7 +2,7 @@ package cours.chap09_String_Enum;
 
 import cours.outils.Clavier;
 
-// Exemple de comtpage du nombre d'un caractère donné dans une chaine de caractère
+// Exemple de comptage du nombre d'un caractère donné dans une chaine de caractère
 
 // P264
 public class Compte1 {
