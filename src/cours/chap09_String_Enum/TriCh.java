@@ -23,7 +23,7 @@ public class TriCh {
 				}
 			}
 		}
-		
+
 		System.out.println("Chaines triees: ");
 		for (i=0 ; i < nbCh -1 ; i++) {
 			System.out.println(tabCh[i]);
