@@ -2,7 +2,7 @@ package cours.chap09_String_Enum;
 
 import cours.outils.Clavier;
 
-//Exemple de conversion d'un int en String
+//Exemple de conversion d'un int (type primitif) en String
 
 //P269
 
