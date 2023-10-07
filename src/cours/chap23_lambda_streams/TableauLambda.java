@@ -10,7 +10,7 @@ public class TableauLambda {
 
 	public static void main(String[] args) {
 		
-		// Tablea ude'expressions lambda
+		// Tableau d'expressions lambda
 		Calculateur7 [] tabCal = {
 			x -> x*x,
 			x -> 2*x,
