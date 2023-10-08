@@ -11,7 +11,7 @@ package cours.chap09_String_Enum;
 public class Applet {
 
 	public static void main(String[] args) {
-		// Début du bloc de texte 
+		// Début du bloc de texte 1
 		String applet = """ 		
 		<HTML>
 			<BODY>
