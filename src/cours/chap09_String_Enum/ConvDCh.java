@@ -2,11 +2,11 @@ package cours.chap09_String_Enum;
 
 import cours.outils.Clavier;
 
-//Exemple de conversion d'un int (type primitif) en String
+// Exemple de conversion d'un int (type primitif) en String
 
-//P269
+// P271
 
-public class ConvDCh2 {
+public class ConvDCh {
 
 	public static void main(String[] args) {
 		

@@ -17,11 +17,11 @@ public class SourceStream {
 		List<Integer> liste = Arrays.asList(tabObj);
 		liste.stream().filter(ee -> ee > 0).forEach(ee -> System.out.print(ee + " "));
 
-		// Filtrage avec collection en parallèle
+		// Filtrage collection en parallèle
 		System.out.println("\n-- Filtrage des >0 avec une collection en parallele : ");
 		liste.parallelStream().filter(ee -> ee > 0).forEach(ee -> System.out.print(ee + " "));
 
-		// Filtrage avec collection en parallèle
+		// Filtrage avec collection affichée de maniere ordonnee
 		System.out.println("\n-- Idem (en parallele) avec forEachOrdered : ");
 		liste.parallelStream().filter(ee -> ee > 0).forEachOrdered(ee -> System.out.print(ee + " "));
 		

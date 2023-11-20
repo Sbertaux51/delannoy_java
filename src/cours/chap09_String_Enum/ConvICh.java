@@ -2,9 +2,9 @@ package cours.chap09_String_Enum;
 
 import cours.outils.Clavier;
 
-//Exemple de conversion d'un double (type primitif) en String
+// Exemple de conversion d'un double (type primitif) en String
 
-//P269
+// P270
 
 public class ConvICh {
 	
