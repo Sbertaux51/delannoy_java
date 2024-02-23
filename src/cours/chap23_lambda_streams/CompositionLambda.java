@@ -2,7 +2,7 @@ package cours.chap23_lambda_streams;
 
 // Exemple de composition d'expressions lambda
 
-// P 684
+// P684
 
 interface Calculateur6 { public int calcul(int n) ; }
 interface FabriqueCalculateur { Calculateur6 fabrique() ; } // Interface pour créer plusieurs calculateurs 

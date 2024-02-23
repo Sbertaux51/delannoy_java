@@ -1,7 +1,7 @@
 package cours.chap23_lambda_streams;
-//Exemple d'une référence à une méthode associé à un objet
+// Exemple d'une référence à une méthode associé à un objet
 
-//P689
+// P689
 interface DistanciableDe { public int distance_a(Point2 p) ; }
 
 public class RefMethInst {
