@@ -16,7 +16,12 @@ import javax.swing.JFrame;
 public class FenCoches extends JFrame {
 
 	private static final long serialVersionUID = 1L;
-	
+
+	public static void main(String[] args) {
+		FenCoches fen = new FenCoches();
+		fen.setVisible(true);
+	}
+
 	public FenCoches() {
 		
 		setTitle("Exemple de case à cocher");
@@ -41,11 +46,5 @@ public class FenCoches extends JFrame {
 
 	private JCheckBox coche1, coche2;
 	private JButton etat;
-}
 
-class Cases1 {
-	public static void main(String arg[]) {
-		FenCoches fen = new FenCoches();
-		fen.setVisible(true);
-	}
 }
