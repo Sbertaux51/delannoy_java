@@ -2,18 +2,17 @@ package cours.chap09_String_Enum;
 
 import cours.outils.Clavier;
 
-//Exemple de conversion d'un int (type primitif) en String
+// Exemple de conversion d'un double (type primitif)en String
 
-//P269
+// P271
 
-public class ConvDCh2 {
+public class ConvDCh {
 
 	public static void main(String[] args) {
-		
 		double x;
-		while(true) {
+		while(true) { // On s'arrete quand n == 0
 			System.out.println("donner un double (0 pour finir) :");
-			x = Clavier.lireFloat();
+			x = Clavier.lireDouble();
 			if (x==0) break;
 			
 			String ch = String.valueOf(x);

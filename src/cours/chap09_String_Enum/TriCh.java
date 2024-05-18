@@ -1,13 +1,13 @@
 package cours.chap09_String_Enum;
 
-//Exemple de tri d'un tableau de chaînes par compareTo()
+// Exemple de tri d'un tableau de chaînes par compareTo()
 
-//P269
+// P269
 
 public class TriCh {
 
 	public static void main(String[] args) {
-		String tabCh[] = { "java", "t", "pascal", "c++", "ada", "basic", "fortran", "cobol", "php", "javascript" };
+		String tabCh[] = { "java", "c", "pascal", "c++", "ada", "basic", "fortran", "cobol", "php", "javascript" };
 
 		String temp; // pour l'échange de deux references
 		int i, j;

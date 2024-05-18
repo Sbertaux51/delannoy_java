@@ -1,47 +1,44 @@
 package cours.chap23_lambda_streams;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
-// Les nouvelles méthodes Java 8 de l'interface Comparator
+// Les méthodes intermédiaires d'un stream :
+// elles s'appliquent à un stream et fournissent un stream
 
-// P692
+// P699
 
 public class SourceStream {
 	public static void main(String[] args) {
-		Integer tabObj [] = {3 , 8 , 2 , -4 , 0 , 12 , 8 , -5 , 3 , -4 , 15};
-		List<Integer> liste = Arrays.asList(tabObj);
+		Integer[] tab = {2, 15, -3, 2, -5, 34, 23, 4, -8, 12};
 
-		System.out.println("-- Filtrage des >0 avec une collection") ;
-		liste.stream().filter(ee -> ee > 0).forEach(ee -> System.out.print(ee + " ")) ;
+		// map(): a chaque element, on affecte un int et on obtient un stream de int 
+		System.out.println("--- Carres des negatifs, double des positifs") ;
+		Stream.of(tab).map( e -> { 
+			if (e > 0) return 2*e ; else return e*e; 
+		}).forEach(e -> System.out.print (e + " "));
 
-		System.out.println("\n-- Filtrage des >0 avec une collection en parallèle") ;
-		liste.parallelStream().filter(ee -> ee > 0).forEach(ee -> System.out.print(ee + " ")) ;
+		// peek () : elle laisse le stream inchangé mais lui applique un Consumer (System.out.print)
+		System.out.println("\n--- Valeurs et nombre de negatifs") ;
+		long nb_reg = Stream.of(tab)
+				.filter(e -> e<0)
+				.peek(e -> System.out.print(e + " "))
+				.count();
+		System.out.println("--- Nombre de negatifs : " + nb_reg) ;
+		
+		// sorted () : elle reorganise le stream en effectuant un tri naturel
+		System.out.println("\n--- Valeurs triees par ordre naturel") ;
+		Stream.of(tab).sorted().forEach(e -> System.out.print(e + " "));
+	
+		// parallel : stream en parallèle, tri avec forEachOrdered (indispensable avec stream parallele
+		System.out.println("\n--- Valeurs triees par ordre naturel en parallele avec forEachOrdered") ;
+		Stream.of(tab).parallel().sorted().forEachOrdered(e -> System.out.print(e + " "));
+		
+		// distinct () : suppression des doublons et ordre inverse
+		System.out.println("\n--- Valeurs triees par ordre inverse, sans doublon") ;
+		Stream.of(tab).sorted(Comparator.reverseOrder()).distinct().forEach(e -> System.out.print(e + " "));
 
-		System.out.println("\n-- Idem (en parallelle) avec forEachOrdered") ;
-		liste.parallelStream().filter(ee -> ee > 0).forEachOrdered(ee -> System.out.print(ee + " ")) ;
-
-		System.out.println("\n-- Filtrage nombres pairs avec une liste de valeurs") ;
-		Stream.of(1 , 8 , -3 , 5 , -22 , 3 , 7 , 12 , 5)
-			.filter(ee -> 2*(ee/2)==ee)
-			.forEachOrdered(ee -> System.out.print(ee + " ")) ;		
-
-		System.out.println("\n-- Filtrage des >0 avec un tableau") ;
-		Stream.of(tabObj)
-			.filter(ee -> ee >0)
-			.forEach(ee -> System.out.print(ee + " ")) ;
-
-		System.out.println("\n-- Avec generation de valeurs aleatoires entieres entre 0 et 9") ;
-		Stream.generate(Math::random)
-			.limit(8)
-			.map(ee -> (int) (ee*10))
-			.forEach(ee -> System.out.print(ee + " ")) ;
-
-		System.out.println("\n-- Avec methode iterative") ;
-		Stream.iterate(15, (ee -> 2 * ee))
-			.limit(10)
-			.forEach(ee -> System.out.print(ee + " ")) ;
-			;
 	}
 }
