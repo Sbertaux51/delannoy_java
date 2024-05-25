@@ -2,7 +2,7 @@ package cours.chap09_String_Enum;
 
 // Exemple d'utilisation d'un type énuméré avec une instruction switch
 
-// P279 
+// P279
 
 public class EnumSwitch {
 
