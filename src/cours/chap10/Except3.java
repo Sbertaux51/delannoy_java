@@ -2,6 +2,7 @@ package cours.chap10;
 
 // Exemple d'utilisation de deux exceptions 
 // La premiere exception ErrDeplacement provoque la sortie du bloc try
+// (avec arrêt d'exécution du programme)
 
 // P290
 

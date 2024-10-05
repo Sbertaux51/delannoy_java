@@ -2,8 +2,9 @@ package cours.chap10;
 
 // Exemple de transmission au gestionnaire d'exception 
 // par le constructeur de la classe d'exception
+// (avec arrêt d'exécution du programme)
 
-// P292
+// P294
 
 public class Exinfo2 {
 	public static void main(String[] args) {

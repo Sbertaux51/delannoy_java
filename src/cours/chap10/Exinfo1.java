@@ -2,6 +2,7 @@ package cours.chap10;
 
 // Exemple de transmission au gestionnaire d'exception 
 // par l'objet fourni à l'instruction throw
+// (avec arrêt d'exécution du programme) (avec arrêt d'exécution du programme)
 
 // P292
 

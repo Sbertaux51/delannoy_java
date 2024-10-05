@@ -1,6 +1,7 @@
 package cours.chap10;
 
 // Exemple d'utilisation d'un gestionnaire d'exception (contenu du bloc catch)
+//  (avec arrêt d'exécution du programme)
 
 // P288
 
