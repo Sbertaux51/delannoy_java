@@ -3,11 +3,12 @@ package cours.chap08_heritage;
 // Exemple de polymorphisme avec un tableau hétérogène de type d'objets avec une méthode indiquant la nature de l'objet
 //
 // Java permet d'affecter à une variable objet non seulement la référence à un objet du type correspondant,
-// mais aussi une référence à un objet d'u bntype dérivé
+// mais aussi une référence à un objet d'un type dérivé
 // C'est une conversion implicite d'une référence à un type classe T en une référence à un type ascendant T'.
 // Le polymorphisme permet d'obtenir un comportmeent adapté à chaque type d'objet sans avoir besoin de tester sa nature.
 //
 // Le choix de la méthode au moment de l'exécution porte le nom de ligature dynamique
+//
 // P221
 
 class Point7 {

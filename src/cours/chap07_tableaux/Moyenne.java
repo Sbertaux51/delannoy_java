@@ -7,6 +7,7 @@ import cours.outils.Clavier;
 // une note supérieure à la moyenne dela classe
 // La définition de la dimension du tableau au moment de sa création
 // permet de travailler avec un nom d'élèves quelconque
+//
 // P177
 
 public class Moyenne {
