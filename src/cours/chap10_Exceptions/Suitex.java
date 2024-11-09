@@ -1,4 +1,4 @@
-package cours.chap10;
+package cours.chap10_Exceptions;
 
 // Exemple de poursuite d'exécution après le gestionnaire d'exception
 

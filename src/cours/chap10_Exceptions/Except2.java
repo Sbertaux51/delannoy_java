@@ -1,4 +1,4 @@
-package cours.chap10;
+package cours.chap10_Exceptions;
 
 // Exemple d'utilisation d'un gestionnaire d'exception (contenu du bloc catch)
 //  (avec arrêt d'exécution du programme)

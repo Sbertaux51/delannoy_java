@@ -1,4 +1,4 @@
-package cours.chap10;
+package cours.chap10_Exceptions;
 
 // Exemple de transmission au gestionnaire d'exception 
 // par l'objet fourni à l'instruction throw

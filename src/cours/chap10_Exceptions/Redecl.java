@@ -1,4 +1,4 @@
-package cours.chap10;
+package cours.chap10_Exceptions;
 
 // Exemple de redeclenchement d'une exception à un niveau supérieur
 
@@ -18,7 +18,7 @@ public class Redecl {
 
 class Point7 {
 	public Point7(int x, int y) throws ErrConstructeur7 {
-		if ((x < 0) || (y < 0))
+		if ((x <= 0) || (y <= 0))
 			throw new ErrConstructeur7();
 		this.x = x;
 		this.y = y;

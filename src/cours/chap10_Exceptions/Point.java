@@ -1,4 +1,4 @@
-package cours.chap10;
+package cours.chap10_Exceptions;
 
 // Exemple d'une classe Point dont le constructeur déclenche une exception ErrConst (avec arrêt d'exécution du programme)
 

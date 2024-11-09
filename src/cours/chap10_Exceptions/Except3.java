@@ -1,4 +1,4 @@
-package cours.chap10;
+package cours.chap10_Exceptions;
 
 // Exemple d'utilisation de deux exceptions 
 // La premiere exception ErrDeplacement provoque la sortie du bloc try
