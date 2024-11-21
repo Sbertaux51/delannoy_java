@@ -1,6 +1,7 @@
 package cours.chap23_lambda_streams;
 
 // Exemple d'une référence à une méthode statique
+// cette méthode statique a un signature du type int calcul(int n)
 
 // P687
 
